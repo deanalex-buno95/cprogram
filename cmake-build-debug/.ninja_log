@@ -1,3 +1,5 @@
 # ninja log v5
 1	152	7108424092629654	CMakeFiles/cprogram.dir/main.c.obj	8148dffb238ff05d
 154	324	7108424094327340	cprogram.exe	b6092ab9b9d167f3
+2	177	7108434686854732	CMakeFiles/cprogram.dir/main.c.obj	8148dffb238ff05d
+177	377	7108434688795711	cprogram.exe	b6092ab9b9d167f3
