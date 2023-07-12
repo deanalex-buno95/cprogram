@@ -1,10 +1,9 @@
 #include <stdio.h>
 
 int main() {
-    printf("000010000\n");
-    printf("000111000\n");
-    printf("001111100\n");
-    printf("011111110\n");
-    printf("111111111\n");
+    char characterName[] = "Santos";  // String variable
+    int characterAge = 21;  // Integer variable
+    printf("My name is %s.\n", characterName);  // Use string placeholder
+    printf("I am %d years old.", characterAge);  // Use integer placeholder
     return 0;
 }
