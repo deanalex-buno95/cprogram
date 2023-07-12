@@ -1,26 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
 
 
-void sayHelloWorld() {
-    printf("Hello World!\n");
-}
-
-void sayHelloPerson(char name[]) {
-    printf("Hello %s!\n", name);
-}
-
-void describePerson(char name[], int age) {
-    printf("Your name is %s, and you are %d year(s) old!\n", name, age);
-}
+double cube(double num);  // Prototype
 
 int main() {
-    /* Note that the function called must be above the main */
-    sayHelloWorld();
-    sayHelloPerson("Alexi");
-    sayHelloPerson("Bryce");
-    describePerson("Charles", 25);
-    describePerson("Donovan", 30);
+    /* Note that the function called must be above the main, unless you prototype the function */
+    printf("Answer: %f", cube(5.0));
     return 0;
+}
+
+double cube(double num) {
+    return num * num * num;
 }
