@@ -12,7 +12,7 @@ void sayHelloPerson(char name[]) {
 }
 
 void describePerson(char name[], int age) {
-    printf("Your name is %s, and you are %d year(s) old!", name, age);
+    printf("Your name is %s, and you are %d year(s) old!\n", name, age);
 }
 
 int main() {
