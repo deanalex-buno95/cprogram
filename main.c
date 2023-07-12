@@ -1,11 +1,10 @@
 #include <stdio.h>
 
 int main() {
-    char characterName[] = "John";  // String variable
-    int characterAge = 55;  // Integer variable
-    printf("My name is %s.\n", characterName);  // Use string placeholder
-    printf("I am %d years old.\n", characterAge);  // Use integer placeholder
-    characterAge = 20;
-    printf("I used to play basketball when I was %d years old.\n", characterAge);
+    int age = 21;  // Integer variable.
+    double gpa = 6.42;  // Double variable (with decimal).
+    float height = 1.69f;  // Float variable (less memory space used than double).
+    char grade = 'D';  // Character variable (use single inverted commas, only one character).
+    char name[] = "Santos";  // String of characters (use double inverted commas, array of characters, cannot be modified).
     return 0;
 }
