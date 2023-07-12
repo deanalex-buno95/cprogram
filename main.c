@@ -2,18 +2,25 @@
 #include <stdlib.h>
 #include <math.h>
 
+
+void sayHelloWorld() {
+    printf("Hello World!\n");
+}
+
+void sayHelloPerson(char name[]) {
+    printf("Hello %s!\n", name);
+}
+
+void describePerson(char name[], int age) {
+    printf("Your name is %s, and you are %d year(s) old!", name, age);
+}
+
 int main() {
-    /* Standard array */
-    int luckyNumbers[] = {0,1, 2, 3, 4, 5, 6, 7, 8, 9};
-    printf("%d\n", luckyNumbers[0]);  // Print integer at index 0
-    luckyNumbers[1] = 10;  // Modify integer at index 1.
-    printf("%d\n", luckyNumbers[1]);  // Print integer at index 1 after mutation.
-    /* Declared array with known length */
-    int unluckyNumbers[10];
-    unluckyNumbers[2] = 100;  // Add integer at index 2.
-    printf("%d\n", unluckyNumbers[2]);  // Print integer at index 2
-    printf("%d\n", unluckyNumbers[3]);  // Print integer at index 3
-    /* Strings (array of characters) */
-    char word[45] = "Array";
+    /* Note that the function called must be above the main */
+    sayHelloWorld();
+    sayHelloPerson("Alexi");
+    sayHelloPerson("Bryce");
+    describePerson("Charles", 25);
+    describePerson("Donovan", 30);
     return 0;
 }
