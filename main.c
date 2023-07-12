@@ -1,10 +1,12 @@
 #include <stdio.h>
 
 int main() {
-    int age = 21;  // Integer variable.
-    double gpa = 6.42;  // Double variable (with decimal).
-    float height = 1.69f;  // Float variable (less memory space used than double).
-    char grade = 'D';  // Character variable (use single inverted commas, only one character).
-    char name[] = "Santos";  // String of characters (use double inverted commas, array of characters, cannot be modified).
+    printf("Hello ");  // Basic printing
+    printf("World\n");  // End line
+    printf("\"Juan\"\n");  // Special characters
+    printf("%d%% success rate.\n", 90);  // Format specifier
+    printf("My favorite %s is %f.\n", "number", 95.69420);  // Format specifiers
+    int favorite = 95;
+    printf("My favorite number is %d.\n", favorite);  // Utilize variables
     return 0;
 }
