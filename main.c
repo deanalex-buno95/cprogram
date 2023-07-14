@@ -8,10 +8,15 @@ int main() {
     double gpa = 6.42;
     char grade = 'A';
 
-    /* Physical memory addresses (%p means pointer) */
-    printf("Age address: %p\n", &age);
-    printf("GPA address: %p\n", &gpa);
-    printf("Grade address: %p\n", &grade);
+    /* Pointer variables */
+    int * pAge = &age;
+    double * pGpa = &gpa;
+    char * pGrade = &grade;
+
+    /* Physical memory addresses in RAM (%p means pointer) */
+    printf("Age address: %p\n", pAge);
+    printf("GPA address: %p\n", pGpa);
+    printf("Grade address: %p\n", pGrade);
 
     return 0;
 }
