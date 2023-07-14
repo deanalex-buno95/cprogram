@@ -3,21 +3,23 @@
 
 
 int main() {
-    int value;
-    printf("Write a value: ");
-    scanf("%d", &value);
-    int numberOfSteps = 0;
-    printf("Step %d: %d\n", numberOfSteps, value);
-    while (value > 1) {
-        if (value % 2 == 1) {
-            value = 3 * value + 1;
-        }
-        else {
-            value /= 2;
-        }
-        numberOfSteps++;
-        printf("Step %d: %d\n", numberOfSteps, value);
+    /* Variables */
+    char* characterList[] = {"Kazuma Kiryu",
+                           "Takayuki Yagami",
+                           "Ryuji Goda",
+                           "Taiga Saejima",
+                           "Masaharu Kaito",
+                           "Ichiban Kasuga",
+                           "Goro Majima",
+                           "Fumiya Sugiura"};
+
+    /* Index */
+    int i;
+
+    /* For Loop */
+    for (i = 0; i < 8; i++) {
+        printf("Index %d: %s\n", i, characterList[i]);
     }
-    printf("It takes %d steps to reach %d.\n", numberOfSteps, value);
+
     return 0;
 }
