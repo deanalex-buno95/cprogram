@@ -2,33 +2,41 @@
 #include <stdlib.h>
 #include <string.h>
 
-char* getTeamColor(int teamNumber) {
-    switch(teamNumber) {
-        case 1:
-            return "RED";
-        case 2:
-            return "BLUE";
-        case 3:
-            return "YELLOW";
-        case 4:
-            return "GREEN";
-        case 5:
-            return "ORANGE";
-        case 6:
-            return "CYAN";
-        case 7:
-            return "PURPLE";
-        case 8:
-            return "WHITE";
-        default:
-            return "N/A";
-    }
-}
+struct Student {
+    /* Attributes */
+    char name[45];
+    char major[45];
+    int birthYear;
+    double gpa;
+};
+
 
 int main() {
-    int teamNumbers[] = {0, 1, 2, 3, 4, 5, 6, 7, 8};
-    for (int i = 0; i < sizeof(teamNumbers)/sizeof(teamNumbers[0]); ++i) {
-        printf("Team %d color: %s\n", teamNumbers[i], getTeamColor(teamNumbers[i]));
-    }
+    /* Create a struct of `Student` */
+    struct Student student1;
+    student1.birthYear = 2002;
+    student1.gpa = 6.42;
+    strcpy(student1.name, "Santos");
+    strcpy(student1.major, "BIT");
+
+    /* Create another struct of `Student` */
+    struct Student student2;
+    student2.birthYear = 2006;
+    student2.gpa = 5.25;
+    strcpy(student2.name, "Alexandra");
+    strcpy(student2.major, "Nursing");
+
+    /* Print output */
+    printf("_Student 1_\n");
+    printf("Age: %d\n", 2023 - student1.birthYear);
+    printf("GPA: %lf\n", student1.gpa);
+    printf("Name: %s\n", student1.name);
+    printf("Major: %s\n", student1.major);
+    printf("_Student 2_\n");
+    printf("Age: %d\n", 2023 - student2.birthYear);
+    printf("GPA: %lf\n", student2.gpa);
+    printf("Name: %s\n", student2.name);
+    printf("Major: %s\n", student2.major);
+
     return 0;
 }
