@@ -18,5 +18,10 @@ int main() {
     printf("GPA address: %p\n", pGpa);
     printf("Grade address: %p\n", pGrade);
 
+    /* De-referenced pointer variables */
+    printf("Age: %d\n", *pAge);
+    printf("GPA: %lf\n", *pGpa);
+    printf("Grade: %c\n", *pGrade);
+
     return 0;
 }
