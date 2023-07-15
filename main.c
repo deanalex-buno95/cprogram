@@ -30,6 +30,25 @@ void lesson02() {
     printf("I used to play basketball when I was %d years old.\n", characterAge);  // Use replaced value for integer placeholder
 }
 
+void lesson03() {
+    /**
+     * Lesson 03 — Data Types
+     */
+    printf("* Lesson 03 *\n");
+    /* Variable data types */
+    int age = 21;  // Integer variable.
+    double gpa = 6.42;  // Double variable (with decimal).
+    float height = 1.69f;  // Float variable (less memory space used than double).
+    char grade = 'A';  // Character variable (use single inverted commas, only one character).
+    char name[] = "Santos";  // String of characters (use double inverted commas, array of characters, cannot be modified).
+    /* Placeholders used */
+    printf("%%d is used for integers like age -> %d.\n", age);
+    printf("%%lf is used for doubles like GPA -> %lf.\n", gpa);
+    printf("%%f is used for floats like height -> %ff.\n", height);
+    printf("%%c is used for characters like grade -> \'%c\'.\n", grade);
+    printf("%%s is used for strings like name -> \"%s\".\n", name);
+}
+
 void lesson25() {
     /**
      * Lesson 25 — Writing Files
@@ -87,12 +106,7 @@ int main() {
     printf("------------------------------------------------------------------------------------------------\n");
     lesson02();
     printf("------------------------------------------------------------------------------------------------\n");
-    printf("------------------------------------------------------------------------------------------------\n");
-    printf("------------------------------------------------------------------------------------------------\n");
-    printf("------------------------------------------------------------------------------------------------\n");
-    printf("------------------------------------------------------------------------------------------------\n");
-    printf("------------------------------------------------------------------------------------------------\n");
-    printf("------------------------------------------------------------------------------------------------\n");
+    lesson03();
     printf("------------------------------------------------------------------------------------------------\n");
     lesson25();  // Writing files
     printf("------------------------------------------------------------------------------------------------\n");
