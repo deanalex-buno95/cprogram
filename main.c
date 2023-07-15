@@ -25,12 +25,38 @@ void lesson25() {
 }
 
 
+void lesson26() {
+    /**
+     * Lesson 26 — Reading Files
+     */
+    printf("* Lesson 26 *\n");
+    /* "r" permission */
+    // Read file.
+    FILE * fPointer = fopen("../rggCharacters.txt", "r");  // "r" for read.
+    // Declare the buffer.
+    char buffer[255];
+    // Get the text from the file, line by line, in a loop till the buffer, given that it is a valid text file.
+    if (fPointer == NULL) {
+        printf("Error: could not open file\n");  // Invalid file.
+    }
+    else {
+        while (fgets(buffer, 255, fPointer)) {
+            printf("%s", buffer);  // One line of text.
+        }
+    }
+    // Close the file.
+    fclose(fPointer);
+}
+
+
 int main() {
     /**
      * All lessons
      */
     printf("------------------------------------------------------------------------------------------------\n");
     lesson25();  // Writing files
+    printf("------------------------------------------------------------------------------------------------\n");
+    lesson26();  // Reading files
     printf("------------------------------------------------------------------------------------------------\n");
     return 0;
 }
