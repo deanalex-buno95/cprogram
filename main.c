@@ -49,6 +49,20 @@ void lesson03() {
     printf("%%s is used for strings like name -> \"%s\".\n", name);
 }
 
+void lesson04() {
+    /**
+     * Lesson 04 — Function printf
+     */
+    printf("* Lesson 04 *\n");
+    printf("Hello ");  // Basic printing
+    printf("World!\n");  // End line
+    printf("\"Juan\"\n");  // Special characters
+    printf("%d%% success rate.\n", 90);  // Format specifier
+    printf("My favorite %s is %f.\n", "number", 95.69420);  // Format specifiers
+    int favorite = 95;
+    printf("My favorite number is %d.\n", favorite);  // Utilize variables
+}
+
 void lesson25() {
     /**
      * Lesson 25 — Writing Files
@@ -107,6 +121,8 @@ int main() {
     lesson02();
     printf("------------------------------------------------------------------------------------------------\n");
     lesson03();
+    printf("------------------------------------------------------------------------------------------------\n");
+    lesson04();
     printf("------------------------------------------------------------------------------------------------\n");
     lesson25();  // Writing files
     printf("------------------------------------------------------------------------------------------------\n");
