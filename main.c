@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 void lesson01() {
     /**
@@ -21,13 +22,13 @@ void lesson02() {
     printf("* Lesson 02 *\n");
     printf("Hello World!\n");
     /* Declaring variables */
-    char characterName[] = "Santos";  // String variable
-    int characterAge = 21;  // Integer variable
-    printf("My name is %s.\n", characterName);  // Use string placeholder "%s"
-    printf("I am %d years old.\n", characterAge);  // Use integer placeholder "%d"
+    char characterName[] = "Santos";  // String variable.
+    int characterAge = 21;  // Integer variable.
+    printf("My name is %s.\n", characterName);  // Use string placeholder "%s".
+    printf("I am %d years old.\n", characterAge);  // Use integer placeholder "%d".
     /* Reassign variables */
     characterAge = 15;
-    printf("I used to play basketball when I was %d years old.\n", characterAge);  // Use replaced value for integer placeholder
+    printf("I used to play basketball when I was %d years old.\n", characterAge);  // Use replaced value for integer placeholder.
 }
 
 void lesson03() {
@@ -51,16 +52,39 @@ void lesson03() {
 
 void lesson04() {
     /**
-     * Lesson 04 — Function printf
+     * Lesson 04 — Function Printf
      */
     printf("* Lesson 04 *\n");
-    printf("Hello ");  // Basic printing
-    printf("World!\n");  // End line
-    printf("\"Juan\"\n");  // Special characters
-    printf("%d%% success rate.\n", 90);  // Format specifier
-    printf("My favorite %s is %f.\n", "number", 95.69420);  // Format specifiers
+    printf("Hello ");  // Basic printing.
+    printf("World!\n");  // End line.
+    printf("\"Juan\"\n");  // Special characters.
+    printf("%d%% success rate.\n", 90);  // Format specifier.
+    printf("My favorite %s is %f.\n", "number", 95.69420);  // Format specifiers.
     int favorite = 95;
-    printf("My favorite number is %d.\n", favorite);  // Utilize variables
+    printf("My favorite number is %d.\n", favorite);  // Utilize variables.
+}
+
+void lesson05() {
+    /**
+     * Lesson 05 — Numbers And Math
+     */
+    printf("* Lesson 05 *\n");
+    /* Simple arithmetic */
+    printf("%f\n", 9.5);  // Simple number
+    printf("%f\n", 5.0 + 4.5);  // Addition.
+    printf("%f\n", 5.0 - 4.5);  // Subtraction.
+    printf("%f\n", 5.0 * 4.5);  // Multiplication.
+    printf("%f\n", 5.0 / 4.5);  // Division.
+    /* Noting different types */
+    printf("%f\n", 5 + 4.5);  // Add integer and double returns double.
+    printf("%d\n", 7 / 4);  // Divide integer by integer returns integer truncated.
+    printf("%f\n", 5 / 4.0);  // Divide integer by double returns double.
+    /* Advanced use of Math, including `math.h` */
+    int num = 5;
+    printf("%d\n", num);  // Use variables.
+    printf("%f\n", pow(2, 3));  // x^y.
+    printf("%f\n", ceil(5.9));  // Round up to nearest whole number.
+    printf("%f\n", floor(5.9));  // Round down to nearest whole number.
 }
 
 void lesson25() {
@@ -123,6 +147,8 @@ int main() {
     lesson03();
     printf("------------------------------------------------------------------------------------------------\n");
     lesson04();
+    printf("------------------------------------------------------------------------------------------------\n");
+    lesson05();
     printf("------------------------------------------------------------------------------------------------\n");
     lesson25();  // Writing files
     printf("------------------------------------------------------------------------------------------------\n");
