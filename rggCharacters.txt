@@ -1,0 +1,4 @@
+Kiryu,Red
+Yagami,Blue
+Goda,Yellow
+Saejima,Green
