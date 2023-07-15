@@ -3,22 +3,23 @@
 
 void lesson01() {
     /**
-     * Lesson 01 — Hello World
+     * Lesson 01 — Hello World And Drawing Shapes
      */
     printf("* Lesson 01 *\n");
     printf("Hello World!\n");
-}
-
-void lesson02() {
-    /**
-     * Lesson 02 — Hello World
-     */
-    printf("* Lesson 02 *\n");
     printf("000010000\n");
     printf("000111000\n");
     printf("001111100\n");
     printf("011111110\n");
     printf("111111111\n");
+}
+
+void lesson02() {
+    /**
+     * Lesson 02 — Variables
+     */
+    printf("* Lesson 02 *\n");
+    printf("Hello World!\n");
 }
 
 void lesson25() {
