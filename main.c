@@ -20,6 +20,14 @@ void lesson02() {
      */
     printf("* Lesson 02 *\n");
     printf("Hello World!\n");
+    /* Declaring variables */
+    char characterName[] = "Santos";  // String variable
+    int characterAge = 21;  // Integer variable
+    printf("My name is %s.\n", characterName);  // Use string placeholder "%s"
+    printf("I am %d years old.\n", characterAge);  // Use integer placeholder "%d"
+    /* Reassign variables */
+    characterAge = 15;
+    printf("I used to play basketball when I was %d years old.\n", characterAge);  // Use replaced value for integer placeholder
 }
 
 void lesson25() {
