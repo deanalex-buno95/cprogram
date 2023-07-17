@@ -467,6 +467,8 @@ int main() {
     sayHelloPerson("Bryce");
     describePerson("Charles", 25);
     describePerson("Donovan", 30);
+    return 0;
+}
 ```
 
 Output:
