@@ -336,7 +336,6 @@ void lesson17() {
     printf("GPA: %lf\n", student2.gpa);
     printf("Name: %s\n", student2.name);
     printf("Major: %s\n", student2.major);
-    printf("* Lesson 17 *\n");
 }
 
 void lesson18() {
