@@ -531,6 +531,18 @@ Output:
 ```
 
 #### Lesson 14 — If Statement
+In every program, certain inputs will affect the way the program is run because of certain criteria met.
+Therefore, the use of `if`, `else`, and `else if` will be used.
+
+In the first and last case, within parenthesis, would be the condition to fulfill.
+If the condition is met (i.e. `true`), then the block of code within the braces would be executed, otherwise skipped.
+If all the previous conditions are not met, then the `else` case will be executed instead.
+
+For conditionals, the use of `&&` and `||` are used to combine conditionals with `"AND"` or `"OR"` cases.
+For the former, both cases must be `true` to be `true`.
+For the latter, at least one case must be `true` to be `true`.
+
+Lastly, using `!(<insert condition here>)` would tweak the condition to where the block of code executes when the condition is `false`.
 
 Input:
 ```c
@@ -615,7 +627,14 @@ Making use of the previous lessons to improve the calculator from lesson 09.
 
 Link:<a href="https://github.com/deanalex-buno95/cprogramcalculator"> https://github.com/deanalex-buno95/cprogramcalculator </a>
 
-#### Lesson 16 — Return Statement
+#### Lesson 16 — Switch Statement
+Making use of If Statements are mostly fine when dealing with most conditions that make use of more than one type of value.
+With that being said, there are other cases where we would only need to use one value to tackle many cases.
+Hence, the switch statement is used for this case.
+
+Let's say there are 8 legal sports teams numbered 1 through 8 (integers), and we want to know the color of their jerseys.
+We can take their team number, and determine case by case as to what the jersey color is (Team 1 wears red, Team 2 wears blue, etc.).
+Lastly, for any other number, there can be a default case at the end where it displays "N/A", meaning the team number is not a normal team number.
 
 Input:
 ```c
@@ -670,6 +689,11 @@ Team 8 color: WHITE
 ```
 
 #### Lesson 17 — Structs
+A value type of public members can be used to describe an object, known as structs.
+When creating a struct, the only thing that can be added are the members, which are public by default.
+There are no methods in a struct since C is mainly procedural and does not use OOP in mind (that comes in C++ and beyond).
+Hence, inputting and printing values are done directly on the members of a struct.
+Regardless, it is a useful way of collecting values of more than 1 data type, like a `Student`.
 
 Input:
 ```c
@@ -717,11 +741,11 @@ int main() {
 
 Output:
 ```
-<insert student1.age here>
+<insert student1 age here>
 6.42
 Santos
 BIT
-<insert student2.age here>
+<insert student2 age here>
 5.25
 Alexandra
 Nursing
@@ -729,6 +753,11 @@ Nursing
 ```
 
 #### Lesson 18 — While Loops
+In most programs, we would iterate certain blocks of code multiple times in a loop.
+Hence, loops such as while and for (lesson 20) are used.
+
+While loops are meant to be used for repeating the running of a block of code till a certain condition is meant.
+For that to happen, the value will change as the code is run until the final condition is met.
 
 Input:
 ```c
@@ -789,6 +818,10 @@ Making use of the previous lessons for a guessing game.
 Link:<a href="https://github.com/deanalex-buno95/cprogramguessinggame"> https://github.com/deanalex-buno95/cprogramguessinggame </a>
 
 #### Lesson 20 — For Loops
+Similar to lesson 18, but for the for loops.
+
+For loops are extremely useful in terms of iterating through a collection of values (with a known number of loops).
+They are more specialized versions of while loops.
 
 Input:
 ```c
@@ -830,6 +863,22 @@ Index 7: Fumiya Sugiura
 ```
 
 #### Lesson 21 — 2D Arrays & Nested Loops
+2D Arrays are arrays that contain smaller same-length arrays.
+They are accessed by looping through each element of the main array.
+Then, since each element is an array, that would be looped through to gain the actual value.
+
+Those loops within each element are called nested loops.
+
+A special type not mentioned in the tutorial are string arrays.
+They are a special type of array since strings are not one of the basic data types in C.
+Strings are arrays of characters joined within double inverted commas.
+Hence, the array of strings is a 2D array.
+They typically will have a buffer at the end of each string `"\0"`.
+After which, if the string length is smaller than the max string length in the string array, they try to add the characters of the next string in the array.
+
+For example:
+- `"Charlie"` (7 characters → max length of 8) — `{'C', 'h', 'a', 'r', 'l', 'i', 'e', '\0'}`
+- `"Alpha"` (4 characters → not max length, being 5, `"Bravo"` is after it) — `{'A', 'l', 'p', 'h', 'a', '\0', 'B', 'r'}`
 
 Input:
 ```c
@@ -928,6 +977,7 @@ groups[7][4] = l
 ```
 
 #### Lesson 22 — Memory Addresses
+Data of the variables' physical addresses.
 
 Input:
 ```c
@@ -957,6 +1007,7 @@ Grade address: 000000dce15ffcff
 ```
 
 #### Lesson 23 — Pointers
+Data of the variables' physical addresses can be referenced as a function.
 
 Input:
 ```c
@@ -990,6 +1041,7 @@ Grade address: 000000dce15ffce7
 ```
 
 #### Lesson 24 — De-referencing Pointers
+Data of the variables' physical addresses can also be de-referenced to get the value.
 
 Input:
 ```c
@@ -1030,6 +1082,7 @@ Grade: A
 ```
 
 #### Lesson 25 — Writing Files
+Create files with `"w"` and `"a"` permissions using file pointers and `fprintf` function to add text to a file by overwriting the file or appending to a filled file.
 
 Input:
 ```c
@@ -1066,6 +1119,7 @@ Goda and Saejima appended into rggCharacters.txt
 ```
 
 #### Lesson 26 — Reading Files
+Read files with `"r"` permission using file pointers, buffer, and `fgets` function to read lines of a file (loop through each line).
 
 Input:
 ```c
