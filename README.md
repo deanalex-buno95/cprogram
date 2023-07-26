@@ -1,13 +1,11 @@
 # C Programming
 
 ## Description
-My first C programming project, learning the basics of C programming.
+My first C programming project, learning the basics of C programming. All lessons are based on the tutorial from `freeCodeCamp.org`.
 
 ## Lessons Taken
 
-### July 12, 2023
-
-#### Lesson 1 — `"Hello World!"` And Shapes
+### Lesson 1 — `"Hello World!"` And Shapes
 When starting a new project, there will be only be this code snippet that prints out the statement, `"Hello World!"`.
 
 Input:
@@ -79,7 +77,7 @@ Output:
 
 ```
 
-#### Lesson 2 — Variables
+### Lesson 2 — Variables
 While inputting the same value on every data output is doable, it is not exactly practical, especially with larger projects.
 Repeating the same value is inefficient, so there is a need to contain these values, to which the value  can just be replaced once, and be done with it.
 
@@ -155,7 +153,7 @@ I used to play basketball when I was 20 years old.
 
 ```
 
-#### Lesson 3 — Data Types
+### Lesson 3 — Data Types
 Every value falls into a particular data type, which explains itself, the kind of data we are representing.
 
 Here is a few lines of variables used:
@@ -181,7 +179,7 @@ The list of variable data types used (and not used):
   - `char[]` — An array of characters, known as a string (a line of characters between double inverted commas).
 - `void` — Not used here, but it is used when a procedure does not return anything.
 
-#### Lesson 4 — `printf()` Function
+### Lesson 4 — `printf()` Function
 `printf` is a very vital function for printing out outputs.
 Typically, there are things to note about this function.
 
@@ -220,7 +218,7 @@ My favorite number is 95.
 
 ```
 
-#### Lesson 5 — Numbers And Math
+### Lesson 5 — Numbers And Math
 Like every language, numbers and Math will take place.
 We can simply print out a number of either `int`, `float`, or `double` type.
 We can also do addition `+`, subtraction `-`, multiplication `*`, and division `/`.
@@ -272,7 +270,7 @@ Output:
 
 ```
 
-#### Lesson 6 — Comments
+### Lesson 6 — Comments
 Comments help others to understand complex code.
 It is best when used sparingly.
 
@@ -298,7 +296,7 @@ int main() {
 }
 ```
 
-#### Lesson 7 — Constants
+### Lesson 7 — Constants
 By default, variables can be reassigned to different values, provided that the data type is exact.
 However, there are some values that programmers want to avoid people from mutating.
 Hence, with the use of `const`, they can turn these variables into immutable constants that cannot be modified.
@@ -323,10 +321,10 @@ int main() {
 }
 ```
 
-#### Lesson 8 — User Inputs
+### Lesson 8 — User Inputs
 As opposed to `printf`, the use of `scanf` and `fgets` allows the user to input data into the system, instead of getting an output.
 
-##### Part 1 — `scanf`
+#### Part 1 — `scanf`
 In most cases, `scanf` is used to input most data types into the system, whether that being a character or number.
 Typically, for anything other than a `char[]` string type, an ampersand `&` is used to get the input.
 
@@ -363,7 +361,7 @@ Your GPA is 6.420000.
 
 ```
 
-##### Part 2 — `fgets`
+#### Part 2 — `fgets`
 As mentioned, the previous method can be used for strings, to which the `&` sign is not needed.
 However, that method brings its set of problems.
 For instance, spaces would be considered as a terminating character.
@@ -395,17 +393,17 @@ Your name is Ryuma Santos
 
 ```
 
-#### Lesson 9 — Basic Calculator
+### Lesson 9 — Basic Calculator
 Making use of the previous lessons for a basic calculator.
 
 Link:<a href="https://github.com/deanalex-buno95/cprogramcalculator"> https://github.com/deanalex-buno95/cprogramcalculator </a>
 
-#### Lesson 10 — Mad Libs Game
+### Lesson 10 — Mad Libs Game
 Making use of the previous lessons for a Mad Libs game.
 
 Link:<a href="https://github.com/deanalex-buno95/cprogrammadlibs"> https://github.com/deanalex-buno95/cprogrammadlibs </a>
 
-#### Lesson 11 — Arrays
+### Lesson 11 — Arrays
 Most of the time, we want to store multiple values of the same type all at once.
 This is where arrays come in.
 
@@ -450,7 +448,7 @@ Output:
 
 ```
 
-#### Lesson 12 — Functions
+### Lesson 12 — Functions
 Most of the time, we will have blocks of code to which we would reuse most of the time.
 Having to type the same blocks of code for different values would be extremely tiring and messy, especially for long programs.
 That is where functions come in handy.
@@ -500,7 +498,7 @@ Your name is Donovan, and you are 30 year(s) old!
 
 ```
 
-#### Lesson 13 — Return Statement
+### Lesson 13 — Return Statement
 Functions are not just procedures, they can also return a value that can be used for the main program
 
 One thing to note is that the `main()` function returns an `int` because it makes use of integers to determine if the program runs successfully.
@@ -530,7 +528,7 @@ Output:
 
 ```
 
-#### Lesson 14 — If Statement
+### Lesson 14 — If Statement
 In every program, certain inputs will affect the way the program is run because of certain criteria met.
 Therefore, the use of `if`, `else`, and `else if` will be used.
 
@@ -622,7 +620,7 @@ Output:
 
 ```
 
-#### Lesson 15 — Better Calculator
+### Lesson 15 — Better Calculator
 Making use of the previous lessons to improve the calculator from lesson 09.
 
 Link:<a href="https://github.com/deanalex-buno95/cprogramcalculator"> https://github.com/deanalex-buno95/cprogramcalculator </a>
@@ -688,7 +686,7 @@ Team 8 color: WHITE
 
 ```
 
-#### Lesson 17 — Structs
+### Lesson 17 — Structs
 A value type of public members can be used to describe an object, known as structs.
 When creating a struct, the only thing that can be added are the members, which are public by default.
 There are no methods in a struct since C is mainly procedural and does not use OOP in mind (that comes in C++ and beyond).
@@ -752,7 +750,7 @@ Nursing
 
 ```
 
-#### Lesson 18 — While Loops
+### Lesson 18 — While Loops
 In most programs, we would iterate certain blocks of code multiple times in a loop.
 Hence, loops such as while and for (lesson 20) are used.
 
@@ -812,12 +810,12 @@ It takes 18 steps to reach 1.
 
 ```
 
-#### Lesson 19 — Guessing Game
+### Lesson 19 — Guessing Game
 Making use of the previous lessons for a guessing game.
 
 Link:<a href="https://github.com/deanalex-buno95/cprogramguessinggame"> https://github.com/deanalex-buno95/cprogramguessinggame </a>
 
-#### Lesson 20 — For Loops
+### Lesson 20 — For Loops
 Similar to lesson 18, but for the for loops.
 
 For loops are extremely useful in terms of iterating through a collection of values (with a known number of loops).
@@ -862,7 +860,7 @@ Index 7: Fumiya Sugiura
 
 ```
 
-#### Lesson 21 — 2D Arrays & Nested Loops
+### Lesson 21 — 2D Arrays & Nested Loops
 2D Arrays are arrays that contain smaller same-length arrays.
 They are accessed by looping through each element of the main array.
 Then, since each element is an array, that would be looped through to gain the actual value.
@@ -976,7 +974,7 @@ groups[7][4] = l
 
 ```
 
-#### Lesson 22 — Memory Addresses
+### Lesson 22 — Memory Addresses
 Data of the variables' physical addresses.
 
 Input:
@@ -1006,7 +1004,7 @@ Grade address: 000000dce15ffcff
 
 ```
 
-#### Lesson 23 — Pointers
+### Lesson 23 — Pointers
 Data of the variables' physical addresses can be referenced as a function.
 
 Input:
@@ -1040,7 +1038,7 @@ Grade address: 000000dce15ffce7
 
 ```
 
-#### Lesson 24 — De-referencing Pointers
+### Lesson 24 — De-referencing Pointers
 Data of the variables' physical addresses can also be de-referenced to get the value.
 
 Input:
@@ -1081,7 +1079,7 @@ Grade: A
 
 ```
 
-#### Lesson 25 — Writing Files
+### Lesson 25 — Writing Files
 Create files with `"w"` and `"a"` permissions using file pointers and `fprintf` function to add text to a file by overwriting the file or appending to a filled file.
 
 Input:
@@ -1118,7 +1116,7 @@ Goda and Saejima appended into rggCharacters.txt
 
 ```
 
-#### Lesson 26 — Reading Files
+### Lesson 26 — Reading Files
 Read files with `"r"` permission using file pointers, buffer, and `fgets` function to read lines of a file (loop through each line).
 
 Input:
